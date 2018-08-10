@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>playr</title>
+</head>
+<body>
+    <h2>All Players</h2>
+    {% for player in players %}
+        <p>{{player.first_name}} {{player.last_name}} Owned by {{player.owner.first_name}} {{player.owner.last_name}}</p>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hi</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'football/css/style.css' %}">
+</head>
+<body>
+    <div id="rapper">
+        <h1 id ="title">De'Champions</h1>
+        <div id = "starters">
+            <h2>Starters</h2>
+
+            <table>
+                <tr>
+                    <th>QB</th>
+                    <td class ="blue">Deshaun Watson</td>
+                </tr>
+                <tr>
+                    <th>RB</th>
+                    <td>Le'Veon Bell</td>
+                </tr>
+                <tr>
+                    <th>RB</th>
+                    <td>Joe Mixon</td>
+                </tr>
+                <tr>
+                    <th>WR</th>
+                    <td>Odell Beckham Jr.</td>
+                </tr>
+                <tr>
+                    <th>WR</th>
+                    <td>Tyreek Hill</td>
+                </tr>
+                <tr>
+                    <th>TE</th>
+                    <td>OJ Howard</td>
+                </tr>
+                <tr>
+                    <th>FLEX</th>
+                    <td>Josh Gordon</td>
+                </tr>
+                <tr>
+                    <th>D/ST</th>
+                    <td>Cleveland Browns</td>
+                </tr>
+                <tr>
+                    <th>K</th>
+                    <td>Justin Tucker</td>
+                </tr>
+            </table>
+        </div>
+       <div id="bench">
+            <h2>Bench</h2>
+            <table>
+                <tr>
+                    <th>QB</th>
+                    <td>Baker Mayfield</td>
+                </tr>
+                <tr>
+                    <th>RB</th>
+                    <td>Derrick Henry</td>
+                </tr>
+                <tr>
+                    <th>RB</th>
+                    <td>Mark Ingram</td>
+                </tr>
+                <tr>
+                    <th>WR</th>
+                    <td>Jarvis Landry</td>
+                </tr>
+                <tr>
+                    <th>WR</th>
+                    <td>Marquise Goodwin</td>
+                </tr>
+                <tr>
+                    <th>TE</th>
+                    <td>Jordan Reed</td>
+                </tr>
+                <tr>
+                    <th>FLEX</th>
+                    <td>Corey Davis</td>
+                </tr>
+            </table>
+       </div>
+       <div id="record">
+            <h4>Record: 6-0</h4>
+       </div>
+       <h1>My Players</h1>
+       {% for player in my_players %}
+            <p>{{player.first_name}} {{player.last_name}} {{player.position}}</p>
+       {% endfor %}
+    </div>
+</body>
+</html>
