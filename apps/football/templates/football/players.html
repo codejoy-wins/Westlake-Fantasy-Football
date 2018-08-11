@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>playr</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'football/css/style.css' %}">
 </head>
 <body>
-    <h2>All Players</h2>
-    {% for player in players %}
-        <p>{{player.first_name}} {{player.last_name}} Owned by {{player.owner.first_name}} {{player.owner.last_name}}</p>
+    <h2 id ="title">Ranked Players</h2>
+    {% for player in players|dictsort:"rank" %}
+        <p> {{player.rank}})  <span id="xp"> {{player.first_name}} {{player.last_name}}</span> {{player.position}} Owned by {{player.owner.first_name}} {{player.owner.last_name}}</p>
     {% endfor %}
+
+    <h2>All Users</h2>
+    {% for user in users %}
+        <p> {{user.first_name}} {{user.last_name}} {{user.team_name}}</p>
+    {% endfor %}
+    <a href="/">my team</a>
 </body>
 </html>

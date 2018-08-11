@@ -23,5 +23,6 @@ class Player (models.Model):
     points = models.IntegerField(default = 0)
     touchdowns = models.IntegerField(default = 0)
     bye = models.IntegerField(default = 5)
+    rank = models.IntegerField(default = 50)
     created_at = models.DateTimeField(auto_now_add =True)
     updated_at = models.DateTimeField(auto_now=True)

@@ -12,6 +12,7 @@ def index(request):
     return render(request, 'football/index.html', context)
 def players(request):
     context = {
-        "players" : Player.objects.all()
+        "players" : Player.objects.all(),
+        "users" : User.objects.all()
     }
     return render(request, 'football/players.html', context)
