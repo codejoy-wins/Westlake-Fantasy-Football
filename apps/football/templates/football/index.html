@@ -10,90 +10,65 @@
 </head>
 <body>
     <div id="rapper">
-        <h1 id ="title">De'Champions</h1>
-        <div id = "starters">
-            <h2>Starters</h2>
-
-            <table>
-                <tr>
-                    <th>QB</th>
-                    <td class ="blue">Deshaun Watson</td>
-                </tr>
-                <tr>
-                    <th>RB</th>
-                    <td>Le'Veon Bell</td>
-                </tr>
-                <tr>
-                    <th>RB</th>
-                    <td>Joe Mixon</td>
-                </tr>
-                <tr>
-                    <th>WR</th>
-                    <td>Odell Beckham Jr.</td>
-                </tr>
-                <tr>
-                    <th>WR</th>
-                    <td>Tyreek Hill</td>
-                </tr>
-                <tr>
-                    <th>TE</th>
-                    <td>OJ Howard</td>
-                </tr>
-                <tr>
-                    <th>FLEX</th>
-                    <td>Josh Gordon</td>
-                </tr>
-                <tr>
-                    <th>D/ST</th>
-                    <td>Cleveland Browns</td>
-                </tr>
-                <tr>
-                    <th>K</th>
-                    <td>Justin Tucker</td>
-                </tr>
-            </table>
+        <div id="header">
+            <div id="d">De'Champions</div>
+             <a href="/players" id="p">all players</a>
         </div>
-       <div id="bench">
-            <h2>Bench</h2>
-            <table>
-                <tr>
-                    <th>QB</th>
-                    <td>Baker Mayfield</td>
-                </tr>
-                <tr>
-                    <th>RB</th>
-                    <td>Derrick Henry</td>
-                </tr>
-                <tr>
-                    <th>RB</th>
-                    <td>Mark Ingram</td>
-                </tr>
-                <tr>
-                    <th>WR</th>
-                    <td>Jarvis Landry</td>
-                </tr>
-                <tr>
-                    <th>WR</th>
-                    <td>Marquise Goodwin</td>
-                </tr>
-                <tr>
-                    <th>TE</th>
-                    <td>Jordan Reed</td>
-                </tr>
-                <tr>
-                    <th>FLEX</th>
-                    <td>Corey Davis</td>
-                </tr>
-            </table>
-       </div>
+        
+       <div></div>
        <div id="record">
             <h4>Record: 6-0</h4>
        </div>
-       <h1>My Players</h1>
-       {% for player in my_players %}
-            <p>{{player.first_name}} {{player.last_name}} {{player.position}}</p>
+       <div></div>
+       <div id="my_players">
+            <h1>My Players</h1>
+            {% for player in my_players %}
+                 <p>{{player.first_name}} {{player.last_name}} {{player.position}}</p>
+            {% endfor %}
+       </div>
+       <div></div>
+       <div id ="new">
+           <h2>Roster</h2>
+        <table>
+            </tr>
+            {% for qb in my_qbs %}
+            
+            <tr>
+                <th>QB</th>
+                <td>{{qb.first_name}} {{qb.last_name}}</td>
+           {% endfor %}
+
+            </tr>
+            {% for rb in my_rbs %}
+            
+            <tr>
+                <th>RB</th>
+                <td>{{rb.first_name}} {{rb.last_name}}</td>
+           {% endfor %}
+
+            </tr>
+            {% for wr in my_wrs %}
+            
+            <tr>
+                <th>WR</th>
+                <td>{{wr.first_name}} {{wr.last_name}}</td>
+           {% endfor %}
+
+            </tr>
+        </tr>
+        {% for te in my_tes %}
+        
+        <tr>
+            <th>TE</th>
+            <td>{{te.first_name}} {{te.last_name}}</td>
        {% endfor %}
-       <a href="/players">players</a>
+
+        </tr>
+        </table>
+       </div>
+       
+       
+       
     </div>
 </body>
 </html>
