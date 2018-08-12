@@ -4,71 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hi</title>
+    <title>Westlake Fantasy Football</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'football/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'football/css/welcome.css' %}">
 </head>
 <body>
-    <div id="rapper">
-        <div id="header">
-            <div id="d">De'Champions</div>
-             <a href="/players" id="p">all players</a>
-        </div>
-        
-       <div></div>
-       <div id="record">
-            <h4>Record: 6-0</h4>
-       </div>
-       <div></div>
-       <div id="my_players">
-            <h1>My Players</h1>
-            {% for player in my_players %}
-                 <p>{{player.first_name}} {{player.last_name}} {{player.position}}</p>
-            {% endfor %}
-       </div>
-       <div></div>
-       <div id ="new">
-           <h2>Roster</h2>
-        <table>
-            </tr>
-            {% for qb in my_qbs %}
-            
-            <tr>
-                <th>QB</th>
-                <td>{{qb.first_name}} {{qb.last_name}}</td>
-           {% endfor %}
-
-            </tr>
-            {% for rb in my_rbs %}
-            
-            <tr>
-                <th>RB</th>
-                <td>{{rb.first_name}} {{rb.last_name}}</td>
-           {% endfor %}
-
-            </tr>
-            {% for wr in my_wrs %}
-            
-            <tr>
-                <th>WR</th>
-                <td>{{wr.first_name}} {{wr.last_name}}</td>
-           {% endfor %}
-
-            </tr>
-        </tr>
-        {% for te in my_tes %}
-        
-        <tr>
-            <th>TE</th>
-            <td>{{te.first_name}} {{te.last_name}}</td>
-       {% endfor %}
-
-        </tr>
-        </table>
-       </div>
-       
-       
-       
-    </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Teams</a>
+                    <ul>
+                        <li><a href="/">Max</a></li>
+                        <li><a href="/">Devin</a></li>
+                        <li><a href="/">Chris</a></li>
+                        <li><a href="/">Trevor</a></li>
+                    </ul>
+                </li>
+                <li><a href="/">Players</a>
+                    <ul>
+                        <li><a href="/">Quarterbacks</a></li>
+                        <li><a href="/">Running Backs</a></li>
+                        <li><a href="/">Wide Receivers</a></li>
+                        <li><a href="/">Tight Ends</a></li>
+                    </ul>
+                </li>
+                <li><a href="/">History</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
 </body>
 </html>

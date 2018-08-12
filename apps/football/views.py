@@ -12,11 +12,17 @@ def index(request):
         "my_wrs": Player.objects.filter(owner = User.objects.get(id=2)).filter(position = "wide receiver"),
         "my_qbs": Player.objects.filter(owner = User.objects.get(id=2)).filter(position = "quarterback"),
         "my_tes": Player.objects.filter(owner = User.objects.get(id=2)).filter(position = "tight end"),
-
-
-
     }
     return render(request, 'football/index.html', context)
+def team(request):
+    context = {
+        "my_players": Player.objects.filter(owner = User.objects.get(id=2)),
+        "my_rbs": Player.objects.filter(owner = User.objects.get(id=2)).filter(position = "running back"),
+        "my_wrs": Player.objects.filter(owner = User.objects.get(id=2)).filter(position = "wide receiver"),
+        "my_qbs": Player.objects.filter(owner = User.objects.get(id=2)).filter(position = "quarterback"),
+        "my_tes": Player.objects.filter(owner = User.objects.get(id=2)).filter(position = "tight end"),
+    }
+    return render(request, 'football/team.html', context)
 def players(request):
     context = {
         "players" : Player.objects.all(),
