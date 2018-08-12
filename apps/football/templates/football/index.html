@@ -11,33 +11,34 @@
 <body>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/">Teams</a>
+                <li>Teams
+                    
                     <ul>
-                        <li><a href="/">Max</a></li>
-                        <li><a href="/">Devin</a></li>
-                        <li><a href="/">Chris</a></li>
-                        <li><a href="/">Trevor</a></li>
-                        <li><a href="/">Ernie</a></li>
-                        <li><a href="/">Sven</a></li>
-                        <li><a href="/">Dylan</a></li>
-                        <li><a href="/">Michael</a></li>
-                        <li><a href="/">Spencer</a></li>
-                        <li><a href="/">Andrew</a></li>
-                        <li><a href="/">Justin</a></li>
-                        <li><a href="/">Devon</a></li>
-
+                        {% for user in users %}
+                        <li><a href="/team/{{user.id}}">{{user.first_name}}</a></li>
+                        {% endfor %}
                     </ul>
+                
                 </li>
                 <li><a href="/players">Players</a>
                     <ul>
-                        <li><a href="/">Quarterbacks</a></li>
-                        <li><a href="/">Running Backs</a></li>
-                        <li><a href="/">Wide Receivers</a></li>
-                        <li><a href="/">Tight Ends</a></li>
+                        <li><a href="/qbs">Quarterbacks</a></li>
+                        <li><a href="/rbs">Running Backs</a></li>
+                        <li><a href="/wrs">Wide Receivers</a></li>
+                        <li><a href="/tes">Tight Ends</a></li>
                     </ul>
                 </li>
                 <li><a href="/">History</a></li>
-                <li><a href="/">Contact</a></li>
+                <li><a href="/">Podcasts</a>
+                    
+                    <ul>
+                        {% for user in users %}
+                        <li><a href="/team/{{user.id}}">{{user.last_name}}</a></li>
+                        {% endfor %}
+                    </ul>
+                
+                </li>
+                <li><a href="/team/1">Free Agents</a></li>
             </ul>
 </body>
 </html>

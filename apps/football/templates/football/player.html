@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Player Details</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'football/css/player.css' %}">
+</head>
+<body>
+    <div id ="details">
+            <h1 id ="green">{{player.first_name}} {{player.last_name}}</h1>
+            <h3>Rank: {{player.rank}}</h4>
+            <h3>Position: {{player.position}}</h5>
+            <h3>Team: {{player.nfl_team}}</h6>
+        <h4 id ="green"> <a href="/">Go Home</a></h1>
+
+    </div>
+    <div>
+    </div>
+</body>
+</html>

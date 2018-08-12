@@ -1,0 +1,23 @@
+body{
+    background-image: url('/static/football/images/hop.webp');
+    background-size: cover;
+}
+#list{
+    background-color:white;
+    display:inline-block;
+    padding:10px;
+    margin:10px;
+    opacity: .4;
+    overflow: auto;
+    height:100%;
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    background-color:darkblue;
+    color:red;
+    padding:6px;
+}

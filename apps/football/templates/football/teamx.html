@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Team X real data</title>
+    <title>Team X</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'football/css/style.css' %}">
 </head>
 <body>
-    <h1>Real Data for team info here.  Like one html that changes data to display based on link parameters.</h1>
+    <div id="rapper">
+        <div id="header">
+            <div id="d">{{user.team_name}}</div>
+             <a href="/players" id="p">all players</a>
+        </div>
+        
+       <div></div>
+       <div id="record">
+            <h4>Record: {{user.wins}}-{{user.losses}}</h4>
+       </div>
+       <div></div>
+       <div id="my_players">
+            <h1>{{user.first_name}}'s Players</h1>
+            {% for player in my_players %}
+                 <p>{{player.first_name}} {{player.last_name}} {{player.position}}</p>
+            {% endfor %}
+       </div>
+       <div></div>
+       <div id ="new">
+           <h2>Roster</h2>
+        <table>
+            </tr>
+            {% for qb in my_qbs %}
+            
+            <tr>
+                <th>QB</th>
+                <td><a href="/player/{{qb.id}}">{{qb.first_name}} {{qb.last_name}}</a></td>
+           {% endfor %}
+
+            </tr>
+            {% for rb in my_rbs %}
+            
+            <tr>
+                <th>RB</th>
+                <td><a href="/player/{{rb.id}}">{{rb.first_name}} {{rb.last_name}}</a></td>
+           {% endfor %}
+
+            </tr>
+            {% for wr in my_wrs %}
+            
+            <tr>
+                <th>WR</th>
+                <td><a href="/player/{{wr.id}}">{{wr.first_name}} {{wr.last_name}}</a></td>
+           {% endfor %}
+
+            </tr>
+        </tr>
+        {% for te in my_tes %}
+        
+        <tr>
+            <th>TE</th>
+            <td><a href="/player/{{te.id}}">{{te.first_name}} {{te.last_name}}</a></td>
+       {% endfor %}
+
+        </tr>
+        </table>
+       </div>
+       
+       
+       <h2 id ="aqua"><a href="/">Return to Home</a></h2>
+    </div>
 </body>
 </html>

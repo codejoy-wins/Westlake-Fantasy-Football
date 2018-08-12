@@ -1,0 +1,14 @@
+body{
+    background-image: url('/static/football/images/peyton.jpg');
+    background-size: cover;
+}
+a{
+    color:gold;
+    text-decoration: none;
+    font-size: 3ch;
+}
+a:hover {
+    color: aqua;
+    background-color:black;
+    padding:10px;
+}

@@ -107,10 +107,25 @@
     display: inline-block;
 }
 #rapper{
+    /* background-image:url("/static/football/images/nfl.jpg"); */
+    /* background-size:cover; */
+    margin: 0 auto;
+}
+body {
     background-image:url("/static/football/images/nfl.jpg");
+    background-size:cover;
+
+
 }
 #new{
     background-color:gold;
     opacity: .4;
     display: inline-block;
+}
+#aqua{
+    color:aqua;
+}
+a{
+    text-decoration: none;
+    color:black;
 }

@@ -11,11 +11,10 @@
 <body>
     <div id="rapper">
         <div id="players">
-            <a href="/team">The best team</a>
             <h2 id ="title2">Ranked Players </h2>
             <div id="overflow">
                     {% for player in players|dictsort:"rank" %}
-                    <p> {{player.rank}})  <span id="xp"> {{player.first_name}} {{player.last_name}}</span> {{player.position}} Owned by {{player.owner.first_name}} {{player.owner.last_name}}</p>
+                    <p> {{player.rank}}) <a href="/player/{{player.id}}"><span id="xp"> {{player.first_name}} {{player.last_name}}</span></a>  {{player.position}} Owned by {{player.owner.first_name}} {{player.owner.last_name}}</p>
                     {% endfor %}
             </div>                
                 

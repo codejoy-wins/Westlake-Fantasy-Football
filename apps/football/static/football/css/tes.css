@@ -1,0 +1,22 @@
+body{
+    background-image: url('/static/football/images/kelce.jpg');
+    background-size: cover;
+}
+#list{
+    background-color:black;
+    display:inline-block;
+    padding:10px;
+    margin:10px;
+    opacity: .4;
+    overflow: auto;
+    height:100%;
+    color: orange;
+}
+a {
+    text-decoration: none;
+    font-size: 4ch;
+}
+a:hover{
+    background-color:white;
+    color:black;
+}

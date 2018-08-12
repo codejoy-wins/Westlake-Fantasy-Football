@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tes</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'football/css/tes.css' %}">
+
+</head>
+<body>
+    <div id ="list">
+            <h1>Tight Ends</h1>
+            {% for te in tes|dictsort:"rank" %}
+                <p><a href="/player/{{te.id}}">{{te.first_name}} {{te.last_name}}</a></p>
+            {% endfor %}
+    </div>
+    
+    <div><a href="/">Home</a></div>
+</body>
+</html>
