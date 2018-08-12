@@ -11,7 +11,7 @@
 <body>
     <div id="rapper">
         <div id="players">
-            <a href="/team">my team</a>
+            <a href="/team">The best team</a>
             <h2 id ="title2">Ranked Players </h2>
             <div id="overflow">
                     {% for player in players|dictsort:"rank" %}
@@ -26,8 +26,8 @@
                     <p> {{user.first_name}} {{user.last_name}} {{user.team_name}}</p>
                 {% endfor %}
         </div>
-        
-            
+        <div></div>
+        <h2><a href="/">Return to Home</a></h2> 
     </div>
     
 </body>
