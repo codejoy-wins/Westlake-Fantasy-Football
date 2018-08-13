@@ -10,10 +10,13 @@
 
 </head>
 <body>
-    <h1>Quarterbacks</h1>
-    {% for qb in qbs|dictsort:"rank" %}
-        <p><a href="/player/{{qb.id}}">{{qb.first_name}} {{qb.last_name}}</a></p>
-    {% endfor %}
-    <div><a href="/">Home</a></div>
+    <div id = "stuff">
+            <h1>Quarterbacks</h1>
+            {% for qb in qbs|dictsort:"rank" %}
+                <p><a href="/player/{{qb.id}}">{{qb.first_name}} {{qb.last_name}}</a></p>
+            {% endfor %}
+            <div><a href="/">Home</a></div>
+    </div>
+    
 </body>
 </html>

@@ -24,5 +24,7 @@ class Player (models.Model):
     touchdowns = models.IntegerField(default = 0)
     bye = models.IntegerField(default = 5)
     rank = models.IntegerField(default = 50)
+    summary = models.TextField(default="N/A", null=True)
+    identifier = models.CharField(max_length=10, default = "basic", null=True)
     created_at = models.DateTimeField(auto_now_add =True)
     updated_at = models.DateTimeField(auto_now=True)

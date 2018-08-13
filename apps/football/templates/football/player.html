@@ -9,15 +9,22 @@
     <link rel="stylesheet" href="{% static 'football/css/player.css' %}">
 </head>
 <body>
-    <div id ="details">
-            <h1 id ="green">{{player.first_name}} {{player.last_name}}</h1>
-            <h3>Rank: {{player.rank}}</h4>
-            <h3>Position: {{player.position}}</h5>
-            <h3>Team: {{player.nfl_team}}</h6>
-        <h4 id ="green"> <a href="/">Go Home</a></h1>
-
+    <div class = "{{player.identifier}}">
+            <div id ="details">
+                    <h1 id ="green">{{player.first_name}} {{player.last_name}}</h1>
+                    <h3>Rank: {{player.rank}}</h4>
+                    <h3>Position: {{player.position}}</h5>
+                    <h3>Team: {{player.nfl_team}}</h6>
+                        <div id = "spacer">
+                            <h2>{{player.owner.team_name}}</h2>
+                        </div>
+                    <h3>Summary: {{player.summary}}</h3>
+                    <div id ="gohome">
+                            <h1><a href="/">Go Home</a></h1>
+                    </div>
+        
+            </div>
     </div>
-    <div>
-    </div>
+    
 </body>
 </html>

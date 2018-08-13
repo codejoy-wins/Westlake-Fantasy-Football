@@ -12,9 +12,5 @@ urlpatterns = [
     url(r'^tes$', views.tes),
     url(r'^player/(?P<player_id>\d+)$', views.playerx),
 
-
     url(r'^', views.odell),
-
-
-
 ]
