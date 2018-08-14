@@ -84,7 +84,13 @@
     color: white;
     text-align: right;
 }
-
+/* Christian McCaffery */
+.CM{
+    background-image:url('/static/football/images/cm2.jpg');
+    background-size: cover;
+    color: white;
+    text-align: right;
+}
 
 
 
