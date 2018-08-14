@@ -26,7 +26,7 @@
     display:inline-block;
     padding: 40px;
     margin:20px;
-    /* background-color:rgb(17, 218, 17); */
+    background-color:black;
     height:600px;
 }
 #users{
@@ -121,6 +121,8 @@ body {
     background-color:gold;
     opacity: .4;
     display: inline-block;
+    font-size: 4ch;
+    line-height: 150%;
 }
 #aqua{
     color:aqua;

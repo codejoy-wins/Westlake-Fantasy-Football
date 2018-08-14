@@ -5,7 +5,7 @@
 
 #details{
     margin-left:30%;
-    background-color:blue;
+    /* background-color:blue; */
     opacity: .5;
     display: inline-block;
     padding: 14px;
@@ -13,8 +13,8 @@
     text-align: center;
 }
 #spacer {
-    height:400px;
-    background-color:blue;
+    height:300px;
+    /* background-color:blue; */
 }
 /* unidentified player */
 .basic{
@@ -50,15 +50,63 @@
 /* Julio Jones */
 .Julio{
     background-image:url('/static/football/images/julio.jpg');
-    background-size: cover;
+    /* background-size: cover; */
+    background-size: 39cm;
+    background-repeat: no-repeat;
     color: rgb(227, 41, 8);
     text-align: right;
 }
+/* Cam Newton */
+.Cam{
+    background-image:url('/static/football/images/cam.jpg');
+    background-size: cover;
+    color: rgb(0, 225, 255);
+    text-align: right;
+}
+/* Michael Thomas */
+.MT{
+    background-image:url('/static/football/images/MT.jpg');
+    background-size: cover;
+    color: gold;
+    text-align: right;
+}
+/* Davante Adams */
+.Davante{
+    background-image:url('/static/football/images/Davante.jpeg');
+    background-size: cover;
+    color: green;
+    text-align: right;
+}
+/* Zach Ertz */
+.Ertz{
+    background-image:url('/static/football/images/zach.png');
+    background-size: cover;
+    color: white;
+    text-align: right;
+}
+
+
+
+
 #gohome a{
     text-decoration: none;
     text-decoration-line: none;
     text-decoration-color: black;
-    color:blue;
-    background-color:green;
+    color:whitesmoke;
+    background-color:black;
     padding: 5px;
+    padding-top:0px;
+    opacity: .6;
+}
+
+#gohome a:hover {
+    background-color:blue;
+}
+
+#summary {
+    background-color:black;
+    line-height: 150%;
+    font-size: 3ch;
+    overflow: auto;
+    height: 400px;
 }
