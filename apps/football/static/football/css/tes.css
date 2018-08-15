@@ -15,8 +15,14 @@ body{
 a {
     text-decoration: none;
     font-size: 4ch;
+    color: white;
 }
 a:hover{
     background-color:white;
     color:black;
+}
+#ya {
+    text-align: center;
+    font-size: 4ch;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }

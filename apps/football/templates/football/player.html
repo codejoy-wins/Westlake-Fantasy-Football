@@ -16,11 +16,16 @@
             </div>
             <div id ="details">
                     <h1 id ="green">{{player.first_name}} {{player.last_name}}</h1>
-                    <h3>Rank: {{player.rank}}</h4>
-                    <h3>{{player.nfl_team}} {{player.position}}</h3>
+                    
+
                         <div id = "spacer">
-                            <h2>Owned by {{player.owner.team_name}}</h2>
                             
+                        </div>
+                        <h2>Owned by {{player.owner.team_name}}</h2>
+
+                        <div id = "other">
+                                <h3>Rank: {{player.rank}}</h4>
+                                    <h3>{{player.nfl_team}} {{player.position}}</h3>
                         </div>
                     <p id = "summary">Summary: {{player.summary}}
                             {% if player.identifier == "CM" %}
