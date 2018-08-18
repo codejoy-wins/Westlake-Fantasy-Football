@@ -17,11 +17,10 @@
             <div id ="details">
                     <h1 id ="green">{{player.first_name}} {{player.last_name}}</h1>
                     
-
                         <div id = "spacer">
                             
                         </div>
-                        <h2>Owned by {{player.owner.team_name}}</h2>
+                        <h2>Owned by <a href="/team/{{player.owner.id}}">{{player.owner.team_name}}</a> </h2>
 
                         <div id = "other">
                                 <h3>Rank: {{player.rank}}</h4>
@@ -31,6 +30,10 @@
                             {% if player.identifier == "CM" %}
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/FtxcAi923k0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             {% endif %}
+                            <h2>
+                                2018 Touchdowns: {{player.touchdowns}}
+                            </h2>
+                            
                     </p>
                     
                     

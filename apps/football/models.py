@@ -11,6 +11,7 @@ class User (models.Model):
     team_name = models.CharField(max_length=255)
     wins = models.IntegerField(default = 0)
     losses = models.IntegerField(default = 0)
+    bio = models.TextField(null=True)
     created_at = models.DateTimeField(auto_now_add =True)
     updated_at = models.DateTimeField(auto_now=True)
 

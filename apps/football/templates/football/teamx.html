@@ -10,22 +10,20 @@
 </head>
 <body class = {{user.first_name}}>
     <div id="rapper">
+       <h2 id ="aqua"><a href="/">Return to Home</a></h2>
+
         <div id="header">
             <div id="d">{{user.team_name}}</div>
              <a href="/players" id="p">all players</a>
         </div>
         
-       <div></div>
+       <div id = "spacer"></div>
        <div id="record">
             <h4>Record: {{user.wins}}-{{user.losses}}</h4>
        </div>
-       <div></div>
-       <!-- <div id="my_players">
-            <h1>{{user.first_name}}'s Players</h1>
-            {% for player in my_players %}
-                 <p>{{player.first_name}} {{player.last_name}} {{player.position}}</p>
-            {% endfor %}
-       </div> -->
+       <div id = "bio">
+           {{user.bio}}
+       </div>
        <div></div>
        <div id ="new">
            <h2>Roster</h2>
