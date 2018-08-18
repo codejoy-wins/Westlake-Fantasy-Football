@@ -112,7 +112,52 @@
     color: red;
     text-align: center;
 }
-
+/* Tom Brady */
+.Brady{
+    background-image:url('/static/football/images/tb12.jpg');
+    background-size: cover;
+    color: rgb(117, 117, 219);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 3ch;
+}
+/* Aaron Rodgers */
+.Arod{
+    background-image:url('/static/football/images/arod2.jpg');
+    background-size: cover;
+    color: rgb(117, 117, 219);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 3ch;
+}
+/* Larry Fitzgerald */
+.Larry{
+    background-image:url('/static/football/images/larry.jpg');
+    background-size: cover;
+    color: rgb(117, 117, 219);
+    text-align: right;
+}
+/* Deshaun Watson */
+.Deshaun{
+    background-image:url('/static/football/images/d.jpg');
+    background-size: cover;
+    color: rgb(117, 117, 219);
+    text-align: right;
+}
+/* Joe Mixon */
+.Mixon{
+    background-image:url('/static/football/images/mixon.jpg');
+    background-size: cover;
+    color: rgb(228, 107, 15);
+    text-align: right;
+}
+/* Michael Jann */
+.MJ{
+    background-image:url('/static/football/images/mj.jpg');
+    background-size: cover;
+    color: whitesmoke;
+    text-align: right;
+}
 
 
 #gohome a{

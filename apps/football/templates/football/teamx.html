@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Team X</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'football/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'football/css/x.css' %}">
 </head>
-<body>
+<body class = {{user.first_name}}>
     <div id="rapper">
         <div id="header">
             <div id="d">{{user.team_name}}</div>
