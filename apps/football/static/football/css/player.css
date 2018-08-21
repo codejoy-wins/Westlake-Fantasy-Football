@@ -224,7 +224,34 @@ h2 a{
     color: silver;
     text-align: right;
 }
-
+/* Antonio Brown */
+.ab{
+    background-image:url('/static/football/images/ab.jpg');
+    background-size: cover;
+    color: gold;
+    text-align: right;
+}
+/* Josh Gordon */
+.Flash{
+    background-image:url('/static/football/images/jg.jpg');
+    background-size: 100%;
+    color: orange;
+    text-align: right;
+}
+/* Odell Beckham Jr. */
+.obj{
+    background-image:url('/static/football/images/obj.jpg');
+    background-size: cover;
+    color: white;
+    text-align: right;
+}
+/* Saquon Barkley */
+.saquon{
+    background-image:url('/static/football/images/barkley.jpg');
+    background-size: cover;
+    color: silver;
+    text-align: right;
+}
 #gohome a{
     text-decoration: none;
     text-decoration-line: none;
