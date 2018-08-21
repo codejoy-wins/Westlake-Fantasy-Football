@@ -1,3 +1,6 @@
+h2 a{
+    color:white;
+}
 #green{
     color:white;
     background-color: black;
@@ -158,7 +161,69 @@
     color: whitesmoke;
     text-align: right;
 }
-
+/* TY Hilton */
+.TY{
+    background-image:url('/static/football/images/ty.jpg');
+    background-size: cover;
+    color: white;
+    text-align: right;
+}
+/* Lesean McCoy */
+.McCoy{
+    background-image:url('/static/football/images/lesean.jpg');
+    background-size: cover;
+    color: white;
+    text-align: right;
+}
+/* Alvin Kamara */
+.Kamara{
+    background-image:url('/static/football/images/kamara.jpg');
+    background-size: cover;
+    color: gold;
+    text-align: right;
+}
+/* Ezekiel Elliot */
+.Zeke{
+    background-image:url('/static/football/images/zeke.jpg');
+    background-size: cover;
+    color: white;
+    text-align: right;
+}
+/* DeAndre Hopkins */
+.Hop{
+    background-image:url('/static/football/images/hop.webp');
+    background-size: cover;
+    color: white;
+    text-align: right;
+}
+/* AJ Green */
+.AJ{
+    background-image:url('/static/football/images/aj.jpg');
+    background-size: cover;
+    color: orange;
+    text-align: right;
+}
+/* Luck */
+.Luck{
+    background-image:url('/static/football/images/luck.jpg');
+    background-size: cover;
+    color: white;
+    text-align: right;
+}
+/* Mike Evans */
+.Evans{
+    background-image:url('/static/football/images/evans.jpeg');
+    background-size: cover;
+    color: red;
+    text-align: right;
+}
+/* Keenan Allen */
+.Keenan{
+    background-image:url('/static/football/images/keenan_allen.jpg');
+    background-size: cover;
+    color: silver;
+    text-align: right;
+}
 
 #gohome a{
     text-decoration: none;

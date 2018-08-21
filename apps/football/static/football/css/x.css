@@ -26,6 +26,11 @@ a:hover{
 #spacer{
     height: 370px;
 }
+.Gordon {
+    color:silver;
+    background-image: url('/static/football/images/james.jpg');    
+
+}
 .Maxwell {
     color:gold;
     background-image: url('/static/football/images/maxwell.jpg');
@@ -77,7 +82,7 @@ a:hover{
 }
 .Trevor {
     color:gold;
-    background-image: url('/static/football/images/goodwin.jpg');
+    background-image: url('/static/football/images/trevor.jpg');
     /* background-size: cover; */
     background-repeat: no-repeat;
     background-color:white;
