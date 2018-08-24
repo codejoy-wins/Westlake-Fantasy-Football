@@ -18,7 +18,7 @@
             <h2 id ="title2">Undrafted </h2>
             <div id="overflow">
                     {% for player in undrafted|dictsort:"rank" %}
-                    <p> {{player.rank}}) <a href="/player/{{player.id}}"><span id="xp"> {{player.first_name}} {{player.last_name}}</span></a>  {{player.position}} Owned by {{player.owner.first_name}} {{player.owner.last_name}}  <a href="/drafting/{{player.id}}" id ="clear">Draft</a></p></p>
+                    <p> {{player.rank}}) <a href="/player/{{player.id}}"><span id="xp"> {{player.first_name}} {{player.last_name}}</span></a>  {{player.position}} <a href="/drafting/{{player.id}}" id ="clear">Draft</a></p></p>
                     {% endfor %}
             </div>                
                 
