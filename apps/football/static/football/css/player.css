@@ -1,3 +1,4 @@
+
 h2 a{
     color:white;
 }
@@ -252,6 +253,27 @@ h2 a{
     color: silver;
     text-align: right;
 }
+/* Doug Baldwin */
+.doug{
+    background-image:url('/static/football/images/baldwin.jpg');
+    background-size: cover;
+    color: green;
+    text-align: right;
+}
+/* Chris Carson */
+.cc{
+    background-image:url('/static/football/images/carson.jpg');
+    background-size: cover;
+    color: green;
+    text-align: right;
+}
+/* Max Jann */
+.codejoy{
+    background-image:url('/static/football/images/doug.jpg');
+    background-size: cover;
+    color: white;
+    text-align: right;
+}
 #gohome a{
     text-decoration: none;
     text-decoration-line: none;
@@ -274,3 +296,7 @@ h2 a{
     overflow: auto;
     height: 400px;
 }
+/* *{
+    background-color:black;
+    color: blue;
+} */

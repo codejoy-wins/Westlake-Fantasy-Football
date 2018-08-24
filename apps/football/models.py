@@ -19,7 +19,7 @@ class Player (models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     position = models.CharField(max_length=255)
-    owner = models.ForeignKey(User, related_name="players")
+    owner = models.ForeignKey(User, related_name="players", null=True)
     nfl_team = models.CharField(max_length=255)
     points = models.IntegerField(default = 0)
     touchdowns = models.IntegerField(default = 0)

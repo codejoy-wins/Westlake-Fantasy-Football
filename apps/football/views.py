@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from models import *
 
 # Create your views here.
@@ -63,6 +63,20 @@ def playerx(request, player_id):
         "player": Player.objects.get(id=player_id),
     }
     return render(request, 'football/player.html', context)
+
+def add(request):
+    print "add"
+    # PASSWORD PROTECT ADDING PLAYERS
+    return render(request, 'football/add.html')
+
+def create(request):
+    print "create"
+    print request.POST
+    print request.POST['first_name']
+    print request.POST['last_name']
+    Player.objects.create(first_name = request.POST['first_name'], last_name=request.POST['last_name'], position=request.POST['position'],nfl_team=request.POST['nfl_team'],rank=request.POST['rank'],summary=request.POST['summary'],identifier=request.POST['identifier'])
+    print "working?"
+    return redirect('/add')
 
 def odell(request):
     return render(request, 'football/odell.html')

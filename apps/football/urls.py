@@ -11,6 +11,7 @@ urlpatterns = [
     url(r'^wrs$', views.wrs),
     url(r'^tes$', views.tes),
     url(r'^player/(?P<player_id>\d+)$', views.playerx),
-
+    url(r'^add$', views.add),
+    url(r'^create$', views.create),
     url(r'^', views.odell),
 ]
