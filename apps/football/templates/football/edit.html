@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Editor</title>
+</head>
+<body>
+    <h1>Edit Player</h1>
+    <h2>{{player.first_name}} {{player.last_name}}</h2>
+    <form action="/update/{{player.id}}" method="POST">
+    {% csrf_token %}
+    <p>First Name: <input type="text" name="first_name" value={{player.first_name}}></p>
+    <p>Last Name: <input type="text" name="last_name" value={{player.last_name}}></p>
+    <p>Position: <input type="text" name="position" value={{player.position}}></p>
+    <p>Owner: <input type="text" name="owner" value={{player.owner}}></p>
+    <p>Bye: <input type="text" name="bye" value={{player.bye}}></p>
+    <p>NFL Team: <input type="text" name="nfl_team" value={{player.nfl_team}}></p>
+    <p>Summary: <input type="text" name="summary" value={{player.summary}}></p>
+    <p>Identifier: <input type="text" name="identifier" value={{player.identifier}}></p>
+    <p>Points: <input type="text" name="points" value={{player.points}}></p>
+    <p>Touchdowns: <input type="text" name="touchdowns" value={{player.touchdowns}}></p>
+    <p>Rank: <input type="text" name="rank" value={{player.rank}}></p>
+    <input type="submit" value="Update Player">
+    </form>
+</body>
+</html>

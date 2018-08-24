@@ -78,5 +78,32 @@ def create(request):
     print "working?"
     return redirect('/add')
 
+def edit(request, player_id):
+    print "editing"
+    print player_id
+    context = {
+        "player": Player.objects.get(id=player_id),
+    }
+    return render(request, 'football/edit.html', context)
+
+def update(request, player_id):
+    print "updating"
+    print player_id
+    print request.POST
+    x = Player.objects.get(id=player_id)
+    x.first_name = request.POST['first_name']
+    x.last_name = request.POST['last_name']
+    x.position = request.POST['position']
+    x.bye = request.POST['bye']
+    x.nfl_team = request.POST['nfl_team']
+    x.identifier = request.POST['identifier']
+    x.summary = request.POST['summary']
+    x.rank = request.POST['rank']
+    x.touchdowns = request.POST['touchdowns']
+    x.points = request.POST['points']
+    x.save()
+    # get player and then make a variable and make changes and save variable
+    return redirect('/')
+
 def odell(request):
     return render(request, 'football/odell.html')

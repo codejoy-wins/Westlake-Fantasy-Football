@@ -296,7 +296,7 @@ h2 a{
     overflow: auto;
     height: 400px;
 }
-/* *{
-    background-color:black;
-    color: blue;
-} */
+* a{
+    color:gold;
+    text-decoration: none;
+}

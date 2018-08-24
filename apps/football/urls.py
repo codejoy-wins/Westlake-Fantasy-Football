@@ -13,5 +13,9 @@ urlpatterns = [
     url(r'^player/(?P<player_id>\d+)$', views.playerx),
     url(r'^add$', views.add),
     url(r'^create$', views.create),
+    url(r'^edit/(?P<player_id>\d+)$', views.edit),
+
+    url(r'^update/(?P<player_id>\d+)$', views.update),
+    
     url(r'^', views.odell),
 ]
