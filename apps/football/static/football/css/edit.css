@@ -274,55 +274,6 @@ h2 a{
     color: white;
     text-align: right;
 }
-/* Jimmy Graham */
-.monster{
-    background-image:url('/static/football/images/monster.jpg');
-    background-size: cover;
-    color: greenyellow;
-    text-align: right;
-}
-/* Kareem Hunt */
-.hunt{
-    background-image:url('/static/football/images/hunt.jpg');
-    background-size: cover;
-    color: greenyellow;
-    text-align: right;
-}
-/* Derrick Henry */
-.derrick{
-    background-image:url('/static/football/images/derrick.jpg');
-    background-size: cover;
-    color: greenyellow;
-    text-align: right;
-}
-/* Drew Brees */
-.brees{
-    background-image:url('/static/football/images/brees.jpg');
-    background-size: cover;
-    color: gold;
-    text-align: right;
-}
-/* Corey Davis */
-.corey{
-    background-image:url('/static/football/images/corey.jpg');
-    background-size: cover;
-    color: lightblue;
-    text-align: right;
-}
-/* Devonta Freeman */
-.freeman{
-    background-image:url('/static/football/images/freeman.jpg');
-    background-size: cover;
-    color: red;
-    text-align: right;
-}
-/* Travis Kelce */
-.kelce{
-    background-image:url('/static/football/images/kelce.jpg');
-    background-size: cover;
-    color: orange;
-    text-align: right;
-}
 #gohome a{
     text-decoration: none;
     text-decoration-line: none;
@@ -339,7 +290,7 @@ h2 a{
 }
 
 #summary {
-    background-color:black;
+    background-color:red;
     line-height: 150%;
     font-size: 3ch;
     overflow: auto;

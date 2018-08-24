@@ -24,7 +24,7 @@
 
                         <div id = "other">
                                 <h3>Rank: {{player.rank}}</h4>
-                                    <h3>{{player.nfl_team}} {{player.position}}</h3>
+                                    <h3>{{player.nfl_team}}  {{player.position}}</h3>
                         </div>
                     <p id = "summary">Summary: {{player.summary}}
                             {% if player.identifier == "CM" %}
@@ -33,6 +33,8 @@
                             <h2>
                                 2018 Touchdowns: {{player.touchdowns}}
                             </h2>
+                            <h5><a href="/rbs">Backs</a><br>
+                                <a href="/wrs">Receivers</a></h5>
                             
                     </p>
                     

@@ -81,12 +81,19 @@ def create(request):
 def edit(request, player_id):
     print "editing"
     print player_id
+    my_player = Player.objects.get(id=player_id)
+    print my_player.position
+    posish = my_player.position
     context = {
         "player": Player.objects.get(id=player_id),
+        "posish": posish
     }
     return render(request, 'football/edit.html', context)
 
 def update(request, player_id):
+    if request.POST['password']!= "codejoy":
+        print "fuck you"
+        return redirect('/odell')
     print "updating"
     print player_id
     print request.POST
@@ -94,10 +101,22 @@ def update(request, player_id):
     x.first_name = request.POST['first_name']
     x.last_name = request.POST['last_name']
     x.position = request.POST['position']
+    if x.position == "running":
+        print "BINGO runner"
+        x.position = "running back"
+    if x.position == "wide":
+        print "BINGO RECEIVER"
+        x.position = "wide receiver"
+    if x.position == "tight":
+        print "BINGO Tight end"
+        x.position = "tight end"
+
     x.bye = request.POST['bye']
     x.nfl_team = request.POST['nfl_team']
     x.identifier = request.POST['identifier']
+
     x.summary = request.POST['summary']
+
     x.rank = request.POST['rank']
     x.touchdowns = request.POST['touchdowns']
     x.points = request.POST['points']
