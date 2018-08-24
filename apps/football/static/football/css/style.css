@@ -131,3 +131,8 @@ a{
     text-decoration: none;
     color:black;
 }
+#clear{
+    color:white;
+    text-decoration: none;
+    text-decoration-color: white;
+}

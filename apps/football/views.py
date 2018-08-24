@@ -124,5 +124,32 @@ def update(request, player_id):
     # get player and then make a variable and make changes and save variable
     return redirect('/player/'+player_id)
 
+def draft(request):
+    print "drafting"
+    context = {
+        "players": Player.objects.all(),
+        "undrafted": Player.objects.filter(status="undrafted"),
+        "drafted": Player.objects.filter(status="drafted"),
+    }
+    return render(request, 'football/draft.html', context)
+
+def drafting(request, player_id):
+    print "drafting this player"
+    print player_id
+    x = Player.objects.get(id=player_id)
+    x.status = "drafted"
+    x.save()
+    # get player and then make a variable and make changes and save variable
+    return redirect('/draft')
+
+def redraft(request, player_id):
+    print "redrafting this player"
+    print player_id
+    x = Player.objects.get(id=player_id)
+    x.status = "undrafted"
+    x.save()
+    # get player and then make a variable and make changes and save variable
+    return redirect('/draft')
+
 def odell(request):
     return render(request, 'football/odell.html')
