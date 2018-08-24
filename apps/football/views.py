@@ -122,7 +122,7 @@ def update(request, player_id):
     x.points = request.POST['points']
     x.save()
     # get player and then make a variable and make changes and save variable
-    return redirect('/')
+    return redirect('/player/'+player_id)
 
 def odell(request):
     return render(request, 'football/odell.html')
