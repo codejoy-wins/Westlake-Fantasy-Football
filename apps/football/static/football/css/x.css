@@ -38,7 +38,7 @@ tr td:hover #hide{
     color: aqua
 }
 #spacer{
-    height: 370px;
+    height: 420px;
 }
 #spacer2{
     height: 80px;
@@ -76,8 +76,7 @@ tr td:hover #hide{
     color:gold;
     background-image: url('/static/football/images/ckazz.jpg');
     /* background-size: cover; */
-    background-size: 100%;
-
+    background-size: 70%;
     background-repeat: no-repeat;
     background-color:white;
 }
@@ -93,7 +92,7 @@ tr td:hover #hide{
 .Ernie {
     color:gold;
     background-image: url('/static/football/images/ernie.jpg');
-    background-size: 100%;
+    background-size: 80%;
 
     /* background-size: cover; */
     background-repeat: no-repeat;
