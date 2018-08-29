@@ -719,7 +719,14 @@ h2 a{
     color: gold;
     text-align: right;
     background-size: 100%;
-
+}
+/* Derrick Carr */
+.carr{
+    background-image:url('/static/football/images/carr.jpg');
+    background-size: cover;
+    color: silver;
+    text-align: right;
+    background-size: 100%;
 }
 #gohome a{
     text-decoration: none;

@@ -1,5 +1,5 @@
 *{
-    font-size:3vw;
+    font-size:2vw;
 }
 h2 a{
     color:aqua
@@ -53,14 +53,13 @@ tr td:hover #hide{
 .Gordon {
     color:silver;
     background-image: url('/static/football/images/james.jpg');    
-
+    background-size: 100%;
 }
 .Maxwell {
     color:gold;
     background-image: url('/static/football/images/maxwell.jpg');
     background-size: 100%;
     /* background-size: cover; */
-    background-repeat: no-repeat;
     background-color:white;
 }
 .Michael {
@@ -68,7 +67,6 @@ tr td:hover #hide{
     background-image: url('/static/football/images/mckenna.jpg');
     background-size: 100%;
     /* background-size: cover; */
-    background-repeat: no-repeat;
     background-color:silver;
 }
 .Devin {
@@ -76,7 +74,6 @@ tr td:hover #hide{
     background-image: url('/static/football/images/devin.jpg');
     background-size: 100%;
     /* background-size: cover; */
-    background-repeat: no-repeat;
     background-color:silver;
 }
 .Chris {
@@ -84,7 +81,6 @@ tr td:hover #hide{
     background-image: url('/static/football/images/ckazz.jpg');
     /* background-size: cover; */
     background-size: 70%;
-    background-repeat: no-repeat;
     background-color:white;
 }
 .Justin {
@@ -93,7 +89,6 @@ tr td:hover #hide{
     /* background-size: cover; */
     background-size: 100%;
 
-    background-repeat: no-repeat;
     background-color:white;
 }
 .Ernie {
@@ -102,14 +97,12 @@ tr td:hover #hide{
     background-size: 80%;
 
     /* background-size: cover; */
-    background-repeat: no-repeat;
     background-color:white;
 }
 .Andrew {
     color:gold;
     background-image: url('/static/football/images/andrew.jpg');
     /* background-size: cover; */
-    background-repeat: no-repeat;
     background-color:white;
 }
 .Trevor {
@@ -118,7 +111,6 @@ tr td:hover #hide{
     background-size: 100%;
 
     /* background-size: cover; */
-    background-repeat: no-repeat;
     background-color:white;
 }
 .Devon {
@@ -127,14 +119,12 @@ tr td:hover #hide{
     /* background-size: cover; */
     background-size: 100%;
 
-    background-repeat: no-repeat;
     background-color:silver;
 }
 .Dylan {
     color:gold;
     background-image: url('/static/football/images/dylan.jpg');
     background-size: 50%;
-    background-repeat: no-repeat;
     background-color:gray;
 }
 .Spencer {
@@ -143,14 +133,12 @@ tr td:hover #hide{
     /* background-size: cover; */
     background-size: 100%;
 
-    background-repeat: no-repeat;
     background-color:whitesmoke;
 }
 .Sven {
     color:gold;
     background-image: url('/static/football/images/svede.jpg');
     /* background-size: cover; */
-    background-repeat: no-repeat;
     background-size: 100%;
 
     background-color:whitesmoke;

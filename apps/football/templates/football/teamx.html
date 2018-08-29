@@ -10,7 +10,7 @@
 </head>
 <body class = {{user.first_name}}>
     <div id="rapper">
-       <h2><a href="/"><img src="/static/football/images/home.svg" alt="home icon" height="40px"></a></h2>
+       <h2><a href="/"><img src="/static/football/images/home.svg" alt="home icon" height="30px"></a></h2>
 
         <div id="header">
             <div id="d">{{user.team_name}}</div>
@@ -19,9 +19,7 @@
         <div id = "spacer2"></div>
         
        <!-- <div id = "spacer"></div> -->
-       <div id="record">
-            <h4>Record: {{user.wins}}-{{user.losses}}</h4>
-       </div>
+       
        <!-- <div id = "bio">
            {{user.bio}}
        </div> -->
@@ -105,8 +103,9 @@
         </tr>
         </table>
        </div>
-       
-       <h2 id ="aqua"><a href="/"><img src="/static/football/images/home.svg" alt="home icon" height="40px"></a></h2>
+       <div id="record">
+        <h4>Record: {{user.wins}}-{{user.losses}}</h4>
+   </div>
        <div id = "spacer"></div>
     </div>
 </body>
