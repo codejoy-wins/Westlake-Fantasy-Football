@@ -1,12 +1,23 @@
 * a{
-    color: black;
-    font-size: 4ch;
+    color: silver;
+    font-size: 1em;
     text-decoration: none;
     text-decoration-color: black;
 }
 #new {
     display: inline-block;
+    width:30%;
+    background-color:black;
+    opacity: .3;
 }
+#hide{
+    display:none;
+}
+tr td:hover #hide{
+    display:block;
+    /* background-color:green; */
+}
+
 #d{
     font-size:3ch;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -16,10 +27,10 @@
     font-family: fantasy;
     color:lightblue;
 }
-a:hover{
+/* a:hover{
     background-color:white;
     padding: 10px;
-}
+} */
 #bio{
     font-size: 4ch;
     background-color:black;
@@ -29,6 +40,9 @@ a:hover{
 #spacer{
     height: 370px;
 }
+#spacer2{
+    height: 80px;
+}
 .Gordon {
     color:silver;
     background-image: url('/static/football/images/james.jpg');    
@@ -37,6 +51,7 @@ a:hover{
 .Maxwell {
     color:gold;
     background-image: url('/static/football/images/maxwell.jpg');
+    background-size: 100%;
     /* background-size: cover; */
     background-repeat: no-repeat;
     background-color:white;
@@ -44,6 +59,7 @@ a:hover{
 .Michael {
     color:gold;
     background-image: url('/static/football/images/mckenna.jpg');
+    background-size: 100%;
     /* background-size: cover; */
     background-repeat: no-repeat;
     background-color:silver;
@@ -51,6 +67,7 @@ a:hover{
 .Devin {
     color:gold;
     background-image: url('/static/football/images/devin.jpg');
+    background-size: 100%;
     /* background-size: cover; */
     background-repeat: no-repeat;
     background-color:silver;
@@ -59,6 +76,8 @@ a:hover{
     color:gold;
     background-image: url('/static/football/images/ckazz.jpg');
     /* background-size: cover; */
+    background-size: 100%;
+
     background-repeat: no-repeat;
     background-color:white;
 }
@@ -66,12 +85,16 @@ a:hover{
     color:gold;
     background-image: url('/static/football/images/jsilbs.jpg');
     /* background-size: cover; */
+    background-size: 100%;
+
     background-repeat: no-repeat;
     background-color:white;
 }
 .Ernie {
     color:gold;
     background-image: url('/static/football/images/ernie.jpg');
+    background-size: 100%;
+
     /* background-size: cover; */
     background-repeat: no-repeat;
     background-color:white;
@@ -86,6 +109,8 @@ a:hover{
 .Trevor {
     color:gold;
     background-image: url('/static/football/images/trevor.jpg');
+    background-size: 100%;
+
     /* background-size: cover; */
     background-repeat: no-repeat;
     background-color:white;
@@ -94,6 +119,8 @@ a:hover{
     color:gold;
     background-image: url('/static/football/images/devo.jpg');
     /* background-size: cover; */
+    background-size: 100%;
+
     background-repeat: no-repeat;
     background-color:silver;
 }
@@ -108,6 +135,8 @@ a:hover{
     color:gold;
     background-image: url('/static/football/images/spencer.jpg');
     /* background-size: cover; */
+    background-size: 100%;
+
     background-repeat: no-repeat;
     background-color:whitesmoke;
 }
@@ -116,5 +145,7 @@ a:hover{
     background-image: url('/static/football/images/svede.jpg');
     /* background-size: cover; */
     background-repeat: no-repeat;
+    background-size: 100%;
+
     background-color:whitesmoke;
 }

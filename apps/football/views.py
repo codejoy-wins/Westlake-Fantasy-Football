@@ -24,7 +24,7 @@ def team(request):
 def players(request):
     context = {
         "players" : Player.objects.all(),
-        "users" : User.objects.all()
+        "users" : User.objects.exclude(first_name="Gordon")
     }
     return render(request, 'football/players.html', context)
 def teamx(request, user_id):
@@ -72,7 +72,6 @@ def playerx(request, player_id):
 
 def add(request):
     print "add"
-    # PASSWORD PROTECT ADDING PLAYERS
     return render(request, 'football/add.html')
 
 def create(request):
@@ -80,7 +79,7 @@ def create(request):
     print request.POST
     print request.POST['first_name']
     print request.POST['last_name']
-    Player.objects.create(first_name = request.POST['first_name'], last_name=request.POST['last_name'], position=request.POST['position'],nfl_team=request.POST['nfl_team'],rank=request.POST['rank'],summary=request.POST['summary'],identifier=request.POST['identifier'])
+    Player.objects.create(first_name = request.POST['first_name'], last_name=request.POST['last_name'], owner = User.objects.first(), position=request.POST['position'],nfl_team=request.POST['nfl_team'],rank=request.POST['rank'],summary=request.POST['summary'],identifier=request.POST['identifier'])
     print "working?"
     return redirect('/add')
 
@@ -228,6 +227,17 @@ def redraft(request, player_id):
     x.save()
     # get player and then make a variable and make changes and save variable
     return redirect('/draft')
+
+def sit(request, user_id, player_id):
+    print "sitting this player"
+    print player_id
+    print "for this user"
+    print user_id
+    x = Player.objects.get(id=player_id)
+    x.play = "benched"
+    x.save()
+    # get player and then make a variable and make changes and save variable
+    return redirect('/team/' + user_id)
 
 def odell(request):
     return render(request, 'football/odell.html')

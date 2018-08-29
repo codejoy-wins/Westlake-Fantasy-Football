@@ -11,7 +11,7 @@
 <body>
     <div id="rapper">
         <div id="players">
-            <h2 id ="title2">Ranked Players </h2>
+            <h2 id ="title2">Players </h2>
             <div id="overflow">
                     {% for player in players|dictsort:"rank" %}
                     <p> {{player.rank}}) <a href="/player/{{player.id}}"><span id="xp"> {{player.first_name}} {{player.last_name}}</span></a>  {{player.position}} Owned by {{player.owner.first_name}} {{player.owner.last_name}}</p>
@@ -20,9 +20,9 @@
                 
         </div>
         <div id="users">
-                <h2>All Users</h2>
-                {% for user in users %}
-                    <p> {{user.first_name}} {{user.last_name}} {{user.team_name}}</p>
+                <h2> <span id ="hot"> Standings </span></h2>
+                {% for user in users|dictsort:"wins" %}
+                    <p> <a href="team/{{user.id}}">{{user.first_name}} {{user.last_name}} {{user.team_name}}</a> {{user.wins}}-{{user.losses}}</p>
                 {% endfor %}
         </div>
         <div></div>

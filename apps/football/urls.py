@@ -19,6 +19,7 @@ urlpatterns = [
     url(r'^drafting/(?P<player_id>\d+)$', views.drafting),
     url(r'^redraft/(?P<player_id>\d+)$', views.redraft),
     url(r'^starting/(?P<user_id>\d+)/(?P<player_id>\d+)$', views.starting),
+    url(r'^sit/(?P<user_id>\d+)/(?P<player_id>\d+)$', views.sit),
 
     url(r'^', views.odell),
 ]

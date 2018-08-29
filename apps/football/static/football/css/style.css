@@ -21,7 +21,7 @@
 }
 #players{
     /* margin-left:40px; */
-    opacity: .8;
+    opacity: .7;
     color:gold;
     display:inline-block;
     padding: 40px;
@@ -29,7 +29,13 @@
     background-color:black;
     height:600px;
 }
+#hot{
+    color:gold;
+    background-color: black;
+    padding: 10px;
+}
 #users{
+    background-color: lightblue;
     text-align: right;
     float: right;
     opacity: .5;
@@ -37,6 +43,8 @@
     /* display:inline-block; */
     padding: 40px;
     margin:20px;
+    overflow: auto;
+    height:500px;
     /* background-color:rgb(184, 32, 22); */
     vertical-align: top;
 }
