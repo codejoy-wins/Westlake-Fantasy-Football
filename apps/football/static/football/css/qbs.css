@@ -1,6 +1,8 @@
 body{
     background-image: url('/static/football/images/arod2.jpg');
     background-size: cover;
+    background-size: 100%;
+
 }
 a{
     color:gold;

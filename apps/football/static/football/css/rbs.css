@@ -1,6 +1,8 @@
 body{
     background-image: url('/static/football/images/zeke.jpg');
     background-size: cover;
+    background-size: 100%;
+
 }
 #list{
     background-color:silver;

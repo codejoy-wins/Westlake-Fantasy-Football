@@ -31,6 +31,8 @@ h2 a{
     background-image:url('/static/football/images/nfl2.jpg');
     background-size: cover;
     color: aqua;
+    background-size: 100%;
+
 }
 /* Tyreek Hill */
 .Tyreek{
@@ -38,18 +40,24 @@ h2 a{
     background-size: cover;
     color: red;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Rob Gronkowski */
 .Gronk{
     background-image:url('/static/football/images/gronk.jpg');
     background-size: cover;
     color: aqua;
+    background-size: 100%;
+
 }
 /* Le'Veon Bell */
 .Bell{
     background-image:url('/static/football/images/bell.jpg');
     background-size: cover;
     color: gold;
+    background-size: 100%;
+
 }
 /* Todd Gurley */
 .Gurley{
@@ -57,15 +65,18 @@ h2 a{
     background-size: cover;
     color: gold;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Julio Jones */
 .Julio{
     background-image:url('/static/football/images/julio.jpg');
     /* background-size: cover; */
     background-size: 39cm;
-    background-repeat: no-repeat;
     color: rgb(227, 41, 8);
     text-align: right;
+    background-size: 100%;
+
 }
 /* Cam Newton */
 .Cam{
@@ -73,6 +84,8 @@ h2 a{
     background-size: cover;
     color: rgb(0, 225, 255);
     text-align: right;
+    background-size: 100%;
+
 }
 /* Michael Thomas */
 .MT{
@@ -80,11 +93,15 @@ h2 a{
     background-size: cover;
     color: gold;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Davante Adams */
 .Davante{
     background-image:url('/static/football/images/Davante.jpeg');
     background-size: cover;
+    background-size: 100%;
+
     color: green;
     text-align: center;
 }
@@ -94,6 +111,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: center;
+    background-size: 100%;
+
 }
 /* Christian McCaffery */
 .CM{
@@ -101,6 +120,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Leonard Fournette */
 .Fournette{
@@ -108,6 +129,8 @@ h2 a{
     background-size: cover;
     color: green;
     text-align: right;
+    background-size: 100%;
+
 }
 /* David Johnson */
 .DJ{
@@ -115,6 +138,8 @@ h2 a{
     background-size: cover;
     color: red;
     text-align: center;
+    background-size: 100%;
+
 }
 /* Tom Brady */
 .Brady{
@@ -124,6 +149,8 @@ h2 a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 3ch;
+    background-size: 100%;
+
 }
 /* Aaron Rodgers */
 .Arod{
@@ -133,6 +160,8 @@ h2 a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 3ch;
+    background-size: 100%;
+
 }
 /* Larry Fitzgerald */
 .Larry{
@@ -140,6 +169,8 @@ h2 a{
     background-size: cover;
     color: rgb(117, 117, 219);
     text-align: right;
+    background-size: 100%;
+
 }
 /* Deshaun Watson */
 .Deshaun{
@@ -147,6 +178,8 @@ h2 a{
     background-size: cover;
     color: rgb(117, 117, 219);
     text-align: right;
+    background-size: 100%;
+
 }
 /* Joe Mixon */
 .Mixon{
@@ -154,6 +187,8 @@ h2 a{
     background-size: cover;
     color: rgb(228, 107, 15);
     text-align: right;
+    background-size: 100%;
+
 }
 /* Michael Jann */
 .MJ{
@@ -161,6 +196,8 @@ h2 a{
     background-size: cover;
     color: whitesmoke;
     text-align: right;
+    background-size: 100%;
+
 }
 /* TY Hilton */
 .TY{
@@ -168,6 +205,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Lesean McCoy */
 .McCoy{
@@ -175,6 +214,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Alvin Kamara */
 .Kamara{
@@ -182,6 +223,8 @@ h2 a{
     background-size: cover;
     color: gold;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Ezekiel Elliot */
 .Zeke{
@@ -189,6 +232,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: right;
+    background-size: 100%;
+
 }
 /* DeAndre Hopkins */
 .Hop{
@@ -196,6 +241,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: right;
+    background-size: 100%;
+
 }
 /* AJ Green */
 .AJ{
@@ -203,6 +250,8 @@ h2 a{
     background-size: cover;
     color: orange;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Luck */
 .Luck{
@@ -210,6 +259,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Mike Evans */
 .Evans{
@@ -217,6 +268,8 @@ h2 a{
     background-size: cover;
     color: red;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Keenan Allen */
 .Keenan{
@@ -224,6 +277,8 @@ h2 a{
     background-size: cover;
     color: silver;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Antonio Brown */
 .ab{
@@ -231,6 +286,8 @@ h2 a{
     background-size: cover;
     color: gold;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Josh Gordon */
 .Flash{
@@ -238,6 +295,8 @@ h2 a{
     background-size: 100%;
     color: orange;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Odell Beckham Jr. */
 .obj{
@@ -245,6 +304,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Saquon Barkley */
 .saquon{
@@ -252,6 +313,8 @@ h2 a{
     background-size: cover;
     color: silver;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Doug Baldwin */
 .doug{
@@ -259,6 +322,8 @@ h2 a{
     background-size: cover;
     color: green;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Chris Carson */
 .cc{
@@ -266,6 +331,8 @@ h2 a{
     background-size: cover;
     color: green;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Max Jann */
 .codejoy{
@@ -273,6 +340,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Jimmy Graham */
 .monster{
@@ -280,6 +349,8 @@ h2 a{
     background-size: cover;
     color: greenyellow;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Kareem Hunt */
 .hunt{
@@ -287,6 +358,8 @@ h2 a{
     background-size: cover;
     color: greenyellow;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Derrick Henry */
 .derrick{
@@ -294,6 +367,8 @@ h2 a{
     background-size: cover;
     color: lightskyblue;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Drew Brees */
 .brees{
@@ -301,6 +376,8 @@ h2 a{
     background-size: cover;
     color: gold;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Corey Davis */
 .corey{
@@ -308,6 +385,8 @@ h2 a{
     background-size: cover;
     color: lightblue;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Devonta Freeman */
 .freeman{
@@ -315,6 +394,8 @@ h2 a{
     background-size: cover;
     color: red;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Travis Kelce */
 .kelce{
@@ -322,6 +403,8 @@ h2 a{
     background-size: cover;
     color: orange;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Jay Ajayi */
 .ajayi{
@@ -329,6 +412,8 @@ h2 a{
     background-size: cover;
     color: green;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Dalvin Cook */
 .cook{
@@ -336,6 +421,8 @@ h2 a{
     background-size: cover;
     color: purple;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Jerick Mckinnon */
 .jerick{
@@ -343,6 +430,8 @@ h2 a{
     background-size: cover;
     color: purple;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Juju Smith-Schuester */
 .juju{
@@ -350,6 +439,8 @@ h2 a{
     background-size: cover;
     color: gold;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Randall Cobb */
 .cobb{
@@ -357,6 +448,8 @@ h2 a{
     background-size: cover;
     color: green;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Will Fuller */
 .fuller{
@@ -364,6 +457,8 @@ h2 a{
     background-size: cover;
     color: blue;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Melvin Gordon */
 .melvin{
@@ -371,6 +466,8 @@ h2 a{
     background-size: cover;
     color: lightblue;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Dion Lewis */
 .dion{
@@ -378,6 +475,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Stefon Diggs */
 .diggs{
@@ -385,6 +484,8 @@ h2 a{
     background-size: cover;
     color: purple;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Demaryius Thomas */
 .DT{
@@ -392,6 +493,8 @@ h2 a{
     background-size: cover;
     color: orange;
     text-align: left;
+    background-size: 100%;
+
 }
 /* Amari Cooper */
 .cooper{
@@ -399,6 +502,8 @@ h2 a{
     background-size: cover;
     color: silver;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Jarvis Landry */
 .landry{
@@ -406,6 +511,8 @@ h2 a{
     background-size: cover;
     color: whitesmoke;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Alex Collins */
 .ac{
@@ -413,6 +520,8 @@ h2 a{
     background-size: cover;
     color: purple;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Marquise Goodwin */
 .goodwin{
@@ -420,6 +529,8 @@ h2 a{
     background-size: cover;
     color: red;
     text-align: right;
+    background-size: 100%;
+
 }
 /*  Marvin Jones Jr. */
 .marvin{
@@ -427,6 +538,8 @@ h2 a{
     background-size: cover;
     color: lightskyblue;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Adam Thielen */
 .thielen{
@@ -434,6 +547,8 @@ h2 a{
     background-size: cover;
     color: purple;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Allen Robinson */
 .ar{
@@ -441,6 +556,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Chris Hogan */
 .hogan{
@@ -448,6 +565,8 @@ h2 a{
     background-size: cover;
     color: purple;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Jordy Nelson */
 .jordy{
@@ -455,6 +574,8 @@ h2 a{
     background-size: cover;
     color: green;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Sammy Watkins */
 .sammy{
@@ -462,6 +583,8 @@ h2 a{
     background-size: cover;
     color: purple;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Alshon Jeffery */
 .alshon{
@@ -469,6 +592,8 @@ h2 a{
     background-size: cover;
     color: darkgreen;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Royce Freeman */
 .royce{
@@ -476,6 +601,8 @@ h2 a{
     background-size: cover;
     color: orange;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Ronald Jones */
 .rojo{
@@ -483,6 +610,8 @@ h2 a{
     background-size: cover;
     color: purple;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Duke Johnson */
 .duke{
@@ -490,6 +619,8 @@ h2 a{
     background-size: cover;
     color: brown;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Tarik Cohen */
 .cohen{
@@ -497,6 +628,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Chris Thompson */
 .thompson{
@@ -504,6 +637,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Jordan Howard */
 .howard{
@@ -511,6 +646,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Marshawn Lynch */
 .beastmode{
@@ -518,6 +655,8 @@ h2 a{
     background-size: cover;
     color: silver;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Patrick Mahomes */
 .mahomes{
@@ -525,6 +664,8 @@ h2 a{
     background-size: cover;
     color: silver;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Jordan Reed */
 .reed{
@@ -532,6 +673,8 @@ h2 a{
     background-size: cover;
     color: lightcoral;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Lamar Miller */
 .miller{
@@ -539,6 +682,8 @@ h2 a{
     background-size: cover;
     color: silver;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Doug Martin */
 .martin{
@@ -546,6 +691,8 @@ h2 a{
     background-size: cover;
     color: silver;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Big Ben */
 .bigben{
@@ -553,6 +700,8 @@ h2 a{
     background-size: cover;
     color: gold;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Julian Edelman */
 .edelman{
@@ -560,6 +709,8 @@ h2 a{
     background-size: cover;
     color: white;
     text-align: right;
+    background-size: 100%;
+
 }
 /* Carlos Hyde */
 .hyde{
@@ -567,6 +718,8 @@ h2 a{
     background-size: cover;
     color: gold;
     text-align: right;
+    background-size: 100%;
+
 }
 #gohome a{
     text-decoration: none;
@@ -577,6 +730,8 @@ h2 a{
     padding: 5px;
     padding-top:0px;
     opacity: .6;
+    background-size: 100%;
+
 }
 
 #gohome a:hover {

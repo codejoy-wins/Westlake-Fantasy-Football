@@ -1,6 +1,7 @@
 body{
     background-image: url('/static/football/images/hop.webp');
     background-size: cover;
+    background-size: 100%;
 }
 #list{
     background-color:white;
