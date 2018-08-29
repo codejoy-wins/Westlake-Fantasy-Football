@@ -435,6 +435,13 @@ h2 a{
     color: purple;
     text-align: right;
 }
+/* Chris Thompson */
+.thompson{
+    background-image:url('/static/football/images/thompson.jpg');
+    background-size: cover;
+    color: white;
+    text-align: right;
+}
 /* Allen Robinson */
 .ar{
     background-image:url('/static/football/images/allen.jpg');
@@ -533,7 +540,34 @@ h2 a{
     color: silver;
     text-align: right;
 }
-
+/* Doug Martin */
+.martin{
+    background-image:url('/static/football/images/martin.jpg');
+    background-size: cover;
+    color: silver;
+    text-align: right;
+}
+/* Big Ben */
+.bigben{
+    background-image:url('/static/football/images/bigben.jpg');
+    background-size: cover;
+    color: gold;
+    text-align: right;
+}
+/* Julian Edelman */
+.edelman{
+    background-image:url('/static/football/images/edelman.jpg');
+    background-size: cover;
+    color: white;
+    text-align: right;
+}
+/* Carlos Hyde */
+.hyde{
+    background-image:url('/static/football/images/hyde.png');
+    background-size: cover;
+    color: gold;
+    text-align: right;
+}
 #gohome a{
     text-decoration: none;
     text-decoration-line: none;

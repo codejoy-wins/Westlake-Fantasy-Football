@@ -4,6 +4,9 @@
     text-decoration: none;
     text-decoration-color: black;
 }
+#new {
+    display: inline-block;
+}
 #d{
     font-size:3ch;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

@@ -13,10 +13,12 @@ def index(request):
 def team(request):
     context = {
         "my_players": Player.objects.filter(owner = User.objects.get(id=2)),
+        "my_starters": Player.objects.filter(owner = User.objects.get(id=2)).filter(status="drafted"),
         "my_rbs": Player.objects.filter(owner = User.objects.get(id=2)).filter(position = "running back"),
         "my_wrs": Player.objects.filter(owner = User.objects.get(id=2)).filter(position = "wide receiver"),
         "my_qbs": Player.objects.filter(owner = User.objects.get(id=2)).filter(position = "quarterback"),
         "my_tes": Player.objects.filter(owner = User.objects.get(id=2)).filter(position = "tight end"),
+
     }
     return render(request, 'football/team.html', context)
 def players(request):
@@ -35,6 +37,7 @@ def teamx(request, user_id):
         "my_wrs": Player.objects.filter(owner = User.objects.get(id=user_id)).filter(position = "wide receiver"),
         "my_qbs": Player.objects.filter(owner = User.objects.get(id=user_id)).filter(position = "quarterback"),
         "my_tes": Player.objects.filter(owner = User.objects.get(id=user_id)).filter(position = "tight end"),
+        "drafted_rbs": Player.objects.filter(status="drafted").filter(owner = User.objects.get(id=user_id)).filter(position="running back"),
     }
     return render(request, 'football/teamx.html', context)
 def qbs(request):
@@ -92,12 +95,48 @@ def edit(request, player_id):
 
 def update(request, player_id):
     if request.POST['password']!= "codejoy":
-        print "fuck you"
+        print "access denied"
         return redirect('/odell')
+    x = Player.objects.get(id=player_id)    
+    if request.POST['owner'] == 'Maxwell':
+        x.owner = User.objects.get(first_name="Maxwell")
+        x.save()
+    if request.POST['owner'] == 'Chris':
+        x.owner = User.objects.get(first_name="Chris")
+        x.save()
+    if request.POST['owner'] == 'Devon':
+        x.owner = User.objects.get(first_name="Devon")
+        x.save()
+    if request.POST['owner'] == 'Devin':
+        x.owner = User.objects.get(first_name="Devin")
+        x.save()
+    if request.POST['owner'] == 'Justin':
+        x.owner = User.objects.get(first_name="Justin")
+        x.save()
+    if request.POST['owner'] == 'Trevor':
+        x.owner = User.objects.get(first_name="Trevor")
+        x.save()
+    if request.POST['owner'] == 'Ernie':
+        x.owner = User.objects.get(first_name="Ernie")
+        x.save()
+    if request.POST['owner'] == 'Andrew':
+        x.owner = User.objects.get(first_name="Andrew")
+        x.save()
+    if request.POST['owner'] == 'Sven':
+        x.owner = User.objects.get(first_name="Sven")
+        x.save()
+    if request.POST['owner'] == 'Michael':
+        x.owner = User.objects.get(first_name="Michael")
+        x.save()
+    if request.POST['owner'] == 'Spencer':
+        x.owner = User.objects.get(first_name="Spencer")
+        x.save()
+    if request.POST['owner'] == 'Dylan':
+        x.owner = User.objects.get(first_name="Dylan")
+        x.save()
     print "updating"
     print player_id
     print request.POST
-    x = Player.objects.get(id=player_id)
     x.first_name = request.POST['first_name']
     x.last_name = request.POST['last_name']
     x.position = request.POST['position']
@@ -141,6 +180,8 @@ def drafting(request, player_id):
     x.save()
     # get player and then make a variable and make changes and save variable
     return redirect('/draft')
+
+
 
 def redraft(request, player_id):
     print "redrafting this player"

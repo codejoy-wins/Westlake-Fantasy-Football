@@ -64,6 +64,46 @@
         </tr>
         </table>
        </div>
+       <!-- This is where I need to display starters-->
+       <div id ="new">
+        <h2>Roster</h2>
+     <table>
+         </tr>
+         {% for qb in my_qbs %}
+         
+         <tr>
+             <th>QB</th>
+             <td><a href="/player/{{qb.id}}">{{qb.first_name}} {{qb.last_name}}</a></td>
+        {% endfor %}
+
+         </tr>
+         {% for rb in drafted_rbs %}
+         
+         <tr>
+             <th>RB</th>
+             <td><a href="/player/{{rb.id}}">{{rb.first_name}} {{rb.last_name}}</a></td>
+        {% endfor %}
+
+         </tr>
+         {% for wr in my_wrs %}
+         
+         <tr>
+             <th>WR</th>
+             <td><a href="/player/{{wr.id}}">{{wr.first_name}} {{wr.last_name}}</a></td>
+        {% endfor %}
+
+         </tr>
+     </tr>
+     {% for te in my_tes %}
+     
+     <tr>
+         <th>TE</th>
+         <td><a href="/player/{{te.id}}">{{te.first_name}} {{te.last_name}}</a></td>
+    {% endfor %}
+
+     </tr>
+     </table>
+    </div>
        
        
        <h2 id ="aqua"><a href="/">Return to Home</a></h2>

@@ -25,10 +25,10 @@
             <option value="quarterback">Quarterback</option>
             <option value="tight end">Tight End</option>
         </select></p>
-        <p>Owner: <input type="text" name="owner" value={{player.owner}}></p>
+        <p>Owner: <input type="text" name="owner" value={{player.owner.first_name}}></p>
         <p>Bye: <input type="text" name="bye" value={{player.bye}}></p>
         <p>NFL Team: <input type="text" name="nfl_team" value={{player.nfl_team}}></p>
-        <p><textarea name="summary" id="summary" value={{player.summary}} cols="30" rows="10"></textarea></p>
+        <p><textarea name="summary" id="summary" cols="30" rows="10">{{player.summary}}</textarea></p>
         <p>Identifier: <input type="text" name="identifier" value={{player.identifier}}></p>
         <p>Points: <input type="text" name="points" value={{player.points}}></p>
         <p>Touchdowns: <input type="text" name="touchdowns" value={{player.touchdowns}}></p>
