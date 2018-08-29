@@ -15,12 +15,10 @@ urlpatterns = [
     url(r'^create$', views.create),
     url(r'^edit/(?P<player_id>\d+)$', views.edit),
     url(r'^update/(?P<player_id>\d+)$', views.update),
-
     url(r'^draft$', views.draft),
     url(r'^drafting/(?P<player_id>\d+)$', views.drafting),
     url(r'^redraft/(?P<player_id>\d+)$', views.redraft),
-
-
+    url(r'^starting/(?P<user_id>\d+)/(?P<player_id>\d+)$', views.starting),
 
     url(r'^', views.odell),
 ]

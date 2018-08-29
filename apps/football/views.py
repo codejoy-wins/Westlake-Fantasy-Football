@@ -33,11 +33,14 @@ def teamx(request, user_id):
         # switch context to be by id
         "user": User.objects.get(id=user_id),
         "my_players": Player.objects.filter(owner = User.objects.get(id=user_id)),
-        "my_rbs": Player.objects.filter(owner = User.objects.get(id=user_id)).filter(position = "running back"),
-        "my_wrs": Player.objects.filter(owner = User.objects.get(id=user_id)).filter(position = "wide receiver"),
-        "my_qbs": Player.objects.filter(owner = User.objects.get(id=user_id)).filter(position = "quarterback"),
-        "my_tes": Player.objects.filter(owner = User.objects.get(id=user_id)).filter(position = "tight end"),
-        "drafted_rbs": Player.objects.filter(status="drafted").filter(owner = User.objects.get(id=user_id)).filter(position="running back"),
+        "my_rbs": Player.objects.filter(owner = User.objects.get(id=user_id)).filter(position = "running back").exclude(play="started"),
+        "my_wrs": Player.objects.filter(owner = User.objects.get(id=user_id)).filter(position = "wide receiver").exclude(play="started"),
+        "my_qbs": Player.objects.filter(owner = User.objects.get(id=user_id)).filter(position = "quarterback").exclude(play="started"),
+        "my_tes": Player.objects.filter(owner = User.objects.get(id=user_id)).filter(position = "tight end").exclude(play="started"),
+        "drafted_rbs": Player.objects.filter(play="started").filter(owner = User.objects.get(id=user_id)).filter(position="running back"),
+        "drafted_wrs": Player.objects.filter(play="started").filter(owner = User.objects.get(id=user_id)).filter(position="wide receiver"),
+        "drafted_qbs": Player.objects.filter(play="started").filter(owner = User.objects.get(id=user_id)).filter(position="quarterback"),
+        "drafted_tes": Player.objects.filter(play="started").filter(owner = User.objects.get(id=user_id)).filter(position="tight end"),
     }
     return render(request, 'football/teamx.html', context)
 def qbs(request):
@@ -181,7 +184,41 @@ def drafting(request, player_id):
     # get player and then make a variable and make changes and save variable
     return redirect('/draft')
 
+def starting(request, user_id, player_id):
+    print "starting this player"
+    print player_id
+    print "for this user"
+    print user_id
+    x = Player.objects.get(id=player_id)
+    p = x.position
+    print p
+    u = User.objects.get(id=user_id)
+    l = len(Player.objects.filter(position="quarterback").filter(owner = u).filter(play="started"))
+    r = len(Player.objects.filter(position="running back").filter(owner = u).filter(play="started"))
+    w = len(Player.objects.filter(position="wide receiver").filter(owner = u).filter(play="started"))
+    t = len(Player.objects.filter(position="tight end").filter(owner = u).filter(play="started"))
 
+    if l>0 and p == "quarterback":
+        print "cannot add qb"
+        print l
+        return redirect('/team/' + user_id)
+    if r>2 and p == "running back":
+        print "cannot add rb"
+        print r
+        return redirect('/team/' + user_id)
+    if w>2 and p == "wide receiver":
+        print "cannot add wr"
+        print w
+        return redirect('/team/' + user_id)
+    if t>1 and p == "tight end":
+        print "cannot add te"
+        print t
+        return redirect('/team/' + user_id)
+    x.status = "drafted"
+    x.play = "started"
+    x.save()
+    # get player and then make a variable and make changes and save variable
+    return redirect('/team/' + user_id)
 
 def redraft(request, player_id):
     print "redrafting this player"

@@ -33,7 +33,7 @@
             
             <tr>
                 <th>QB</th>
-                <td><a href="/player/{{qb.id}}">{{qb.first_name}} {{qb.last_name}}</a></td>
+                <td><a href="/player/{{qb.id}}">{{qb.first_name}} {{qb.last_name}}</a> <a href="/starting/{{user.id}}/{{qb.id}}">Start?</a></td>
            {% endfor %}
 
             </tr>
@@ -41,7 +41,7 @@
             
             <tr>
                 <th>RB</th>
-                <td><a href="/player/{{rb.id}}">{{rb.first_name}} {{rb.last_name}}</a></td>
+                <td><a href="/player/{{rb.id}}">{{rb.first_name}} {{rb.last_name}}</a><a href="/starting/{{user.id}}/{{rb.id}}">Start?</a></td>
            {% endfor %}
 
             </tr>
@@ -49,7 +49,7 @@
             
             <tr>
                 <th>WR</th>
-                <td><a href="/player/{{wr.id}}">{{wr.first_name}} {{wr.last_name}}</a></td>
+                <td><a href="/player/{{wr.id}}">{{wr.first_name}} {{wr.last_name}}</a> <a href="/starting/{{user.id}}/{{wr.id}}">Start?</a></td>
            {% endfor %}
 
             </tr>
@@ -58,7 +58,7 @@
         
         <tr>
             <th>TE</th>
-            <td><a href="/player/{{te.id}}">{{te.first_name}} {{te.last_name}}</a></td>
+            <td><a href="/player/{{te.id}}">{{te.first_name}} {{te.last_name}}</a> <a href="/starting/{{user.id}}/{{te.id}}">Start?</a></td>
        {% endfor %}
 
         </tr>
@@ -69,7 +69,7 @@
         <h2>Roster</h2>
      <table>
          </tr>
-         {% for qb in my_qbs %}
+         {% for qb in drafted_qbs %}
          
          <tr>
              <th>QB</th>
@@ -85,7 +85,7 @@
         {% endfor %}
 
          </tr>
-         {% for wr in my_wrs %}
+         {% for wr in drafted_wrs %}
          
          <tr>
              <th>WR</th>
@@ -94,7 +94,7 @@
 
          </tr>
      </tr>
-     {% for te in my_tes %}
+     {% for te in drafted_tes %}
      
      <tr>
          <th>TE</th>

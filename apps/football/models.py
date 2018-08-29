@@ -28,5 +28,6 @@ class Player (models.Model):
     summary = models.TextField(default="N/A", null=True)
     identifier = models.CharField(max_length=10, default = "basic", null=True)
     status = models.CharField(max_length=255, default = "undrafted" ,null = True)
+    play = models.CharField(max_length=255, default = "benched" ,null = True)
     created_at = models.DateTimeField(auto_now_add =True)
     updated_at = models.DateTimeField(auto_now=True)
