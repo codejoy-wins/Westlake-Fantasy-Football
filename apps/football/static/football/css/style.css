@@ -35,18 +35,24 @@
     padding: 10px;
 }
 #users{
-    background-color: lightblue;
+    background-color: black;
     text-align: right;
     float: right;
     opacity: .5;
-    color:white;
+    color:gold;
+    text-decoration-color: none;
+    text-decoration: none;
     /* display:inline-block; */
+    font-size: 1.4em;
     padding: 40px;
     margin:20px;
     overflow: auto;
-    height:500px;
+    height:660px;
     /* background-color:rgb(184, 32, 22); */
     vertical-align: top;
+}
+#users a{
+    color:lightblue;
 }
 #title{
     opacity: .5;
