@@ -12,7 +12,7 @@
     <div class = "{{player.identifier}}">
         <h1>Edit {{player.first_name}} {{player.last_name}}</h1>
         <h4>{{posish}}</h4>
-        <h3><a href="/">Go Home</a></h3>
+        <h3><a href="/"><img src="/static/football/images/home.svg" alt="home icon" height="40px"></a></h3>
         <form action="/update/{{player.id}}" method="POST">
         {% csrf_token %}
         <p>First Name: <input type="text" name="first_name" value={{player.first_name}}></p>

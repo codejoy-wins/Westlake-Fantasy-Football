@@ -1,6 +1,12 @@
+*{
+    font-size:3vw;
+}
+h2 a{
+    color:aqua
+}
 * a{
     color: silver;
-    font-size: 1em;
+    font-size: 2vw;
     text-decoration: none;
     text-decoration-color: black;
 }
@@ -9,6 +15,7 @@
     width:30%;
     background-color:black;
     opacity: .3;
+    font-size:2vw;
 }
 #hide{
     display:none;
@@ -19,11 +26,11 @@ tr td:hover #hide{
 }
 
 #d{
-    font-size:3ch;
+    font-size:3vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #record{
-    font-size:4ch;
+    font-size:3vw;
     font-family: fantasy;
     color:lightblue;
 }
@@ -32,7 +39,7 @@ tr td:hover #hide{
     padding: 10px;
 } */
 #bio{
-    font-size: 4ch;
+    font-size: 3vw;
     background-color:black;
     opacity: .5;
     color: aqua
