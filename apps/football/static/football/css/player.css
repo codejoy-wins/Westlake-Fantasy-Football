@@ -36,7 +36,7 @@ h2 a{
 }
 /* Tyreek Hill */
 .Tyreek{
-    background-image:url('/static/football/images/tyreek.jpeg');
+    background-image:url('/static/football/images/freak.jpg');
     background-size: cover;
     color: red;
     text-align: right;
@@ -174,7 +174,7 @@ h2 a{
 }
 /* Deshaun Watson */
 .Deshaun{
-    background-image:url('/static/football/images/d.jpg');
+    background-image:url('/static/football/images/dw.jpg');
     background-size: cover;
     color: rgb(117, 117, 219);
     text-align: right;
@@ -273,7 +273,7 @@ h2 a{
 }
 /* Keenan Allen */
 .Keenan{
-    background-image:url('/static/football/images/keenan_allen.jpg');
+    background-image:url('/static/football/images/keen.jpg');
     background-size: cover;
     color: silver;
     text-align: right;
@@ -300,7 +300,7 @@ h2 a{
 }
 /* Odell Beckham Jr. */
 .obj{
-    background-image:url('/static/football/images/obj.jpg');
+    background-image:url('/static/football/images/odb.jpg');
     background-size: cover;
     color: white;
     text-align: right;
@@ -363,7 +363,7 @@ h2 a{
 }
 /* Derrick Henry */
 .derrick{
-    background-image:url('/static/football/images/derrick.jpg');
+    background-image:url('/static/football/images/ohenry.jpg');
     background-size: cover;
     color: lightskyblue;
     text-align: right;
@@ -651,7 +651,7 @@ h2 a{
 }
 /* Marshawn Lynch */
 .beastmode{
-    background-image:url('/static/football/images/beastmode.jpg');
+    background-image:url('/static/football/images/shawn.jpg');
     background-size: cover;
     color: silver;
     text-align: right;
@@ -669,7 +669,7 @@ h2 a{
 }
 /* Jordan Reed */
 .reed{
-    background-image:url('/static/football/images/reed.jpg');
+    background-image:url('/static/football/images/jr.jpg');
     background-size: cover;
     color: lightcoral;
     text-align: right;
