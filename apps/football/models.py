@@ -12,6 +12,7 @@ class User (models.Model):
     wins = models.IntegerField(default = 0)
     losses = models.IntegerField(default = 0)
     bio = models.TextField(null=True)
+    power = models.IntegerField(default = 0, null = True)
     created_at = models.DateTimeField(auto_now_add =True)
     updated_at = models.DateTimeField(auto_now=True)
 

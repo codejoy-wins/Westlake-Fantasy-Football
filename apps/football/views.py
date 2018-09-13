@@ -43,6 +43,47 @@ def teamx(request, user_id):
         "drafted_tes": Player.objects.filter(play="started").filter(owner = User.objects.get(id=user_id)).filter(position="tight end"),
     }
     return render(request, 'football/teamx.html', context)
+
+def editteam(request, user_id):
+    print user_id
+    
+    the_user = User.objects.get(id=user_id)
+    context = {
+        "user": the_user,
+    }
+    return render(request, 'football/editteam.html', context)
+
+def power(request):
+    context = {
+        "jay": "silent bob",
+        "users": User.objects.exclude(last_name = "Freeman")
+    }
+    return render(request, 'football/power.html', context)
+
+def updateteam(request, user_id):
+    print "updating"
+    print user_id
+    if request.POST['authenticator']!= "codejoy":
+        print "access denied"
+        return redirect('/odell')
+    x = User.objects.get(id=user_id)
+    x.team_name = request.POST['team_name']
+    x.first_name = request.POST['first_name']
+    x.last_name = request.POST['last_name']
+    x.wins = request.POST['wins']
+    x.losses = request.POST['losses']
+    x.power = request.POST['power']
+    x.password = request.POST['password']
+    x.email = request.POST['email']
+    x.bio = request.POST['bio']
+    x.save()
+    
+    # the coding dojo is missing a step in learning
+    # they go straight into setting things to the post object, when we should first set things to sally
+    return redirect('/team/'+ user_id)
+    # redirect to that teams page
+# update team
+
 def qbs(request):
     context = {
         "qbs": Player.objects.filter(position = "quarterback"),
@@ -102,6 +143,9 @@ def update(request, player_id):
     x = Player.objects.get(id=player_id)    
     if request.POST['owner'] == 'Maxwell':
         x.owner = User.objects.get(first_name="Maxwell")
+        x.save()
+    if request.POST['owner'] == 'Gordon':
+        x.owner = User.objects.get(first_name="Gordon")
         x.save()
     if request.POST['owner'] == 'Chris':
         x.owner = User.objects.get(first_name="Chris")

@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Team X</title>
+    <title>Ranked {{user.power}}</title>
     {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'football/images/football.png' %}" />
+
     <link rel="stylesheet" href="{% static 'football/css/x.css' %}">
 </head>
 <body class = {{user.first_name}}>
     <div id="rapper">
        <h2><a href="/"><img src="/static/football/images/home.svg" alt="home icon" height="30px"></a></h2>
-
         <div id="header">
-            <div id="d">{{user.team_name}}</div>
-             <a href="/players" id="p">all players</a>
+            <div id="d"> <a href="/edit/team/{{user.id}}">{{user.team_name}}</a></div>
+             <a href="/players" id="p">all players</a>|<a href="/power" id="p">Power Rankings</a>
+
         </div>
         <div id = "spacer2"></div>
         

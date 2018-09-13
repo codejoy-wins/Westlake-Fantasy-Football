@@ -712,6 +712,15 @@ h2 a{
     background-size: 100%;
 
 }
+/* Brandin Cooks */
+.cooks{
+    background-image:url('/static/football/images/cooks.jpg');
+    background-size: cover;
+    color: white;
+    text-align: right;
+    background-size: 100%;
+
+}
 /* Carlos Hyde */
 .hyde{
     background-image:url('/static/football/images/hyde.png');

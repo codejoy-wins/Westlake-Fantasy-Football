@@ -1,3 +1,12 @@
+#header2{
+    color:blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vw;
+}
+
+#header{
+    color:black;
+}
 *{
     font-size:2vw;
 }
@@ -5,7 +14,7 @@ h2 a{
     color:aqua
 }
 * a{
-    color: silver;
+    color: red;
     font-size: 2vw;
     text-decoration: none;
     text-decoration-color: black;
@@ -31,8 +40,10 @@ tr td:hover #hide{
 }
 #record{
     font-size:3vw;
-    font-family: fantasy;
-    color:lightblue;
+    font-family: 'Old Standard TT', serif;
+
+    /* fix fantasy */
+    color:rgb(79, 68, 177);
 }
 /* a:hover{
     background-color:white;
@@ -57,9 +68,8 @@ tr td:hover #hide{
 }
 .Maxwell {
     color:gold;
-    background-image: url('/static/football/images/maxwell.jpg');
+    background-image: url('/static/football/images/me.jpg');
     background-size: 100%;
-    /* background-size: cover; */
     background-color:white;
 }
 .Michael {
@@ -94,7 +104,7 @@ tr td:hover #hide{
 .Ernie {
     color:gold;
     background-image: url('/static/football/images/ernie.jpg');
-    background-size: 80%;
+    background-size: 50%;
 
     /* background-size: cover; */
     background-color:white;
